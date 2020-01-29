@@ -2,6 +2,16 @@
 
 A collaborative filtering based web asset recommendation system. Using implicit user clickstream data, recommend the next best asset to be consumed to maximize user engagement on a website.
 
+## Motivation
+The goal of a top-of-the-funnel digital business-to-business marketing team is to maximize the number of forms submitted on the company website to help the business maximize sales leads. Each form is displayed on a page of its own and, when downloaded by a visitor, represents a unit of interest in purchasing a product in that business unit for that visitor. By serving more relevant forms to these visitors, we can increase visitor engagement on the website and increase the likelihood of a future sales lead.
+
+Using Adobe Analytics, our website analytics platform, we can track which forms are submitted by each user, the number of forms submitted by each user, and the cookie id of each user. We can use this data to create a system that learns the preferences of users based on their form submission history and recommends a form aligning best with the interest of a visitor. We achieve this with a technique called collaborative filtering which is described below.
+
+## Model
+
+
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -49,11 +59,11 @@ This data corresponds to the quantitative metrics each user generates with respe
 
 ![Alt text](img/avg_similarity.png?raw=true "Average similarity data")
 
-This image corresponds to a plot of form similarity for each business unit and serves as an example of an analysis that can be run to understand the performance of the recommender for each business unit.
+This plot describes form similarity for each business unit and serves as an example of an analysis that can be run to understand the performance of the recommender for each business unit.
 
 ![Alt text](img/hitrate.png?raw=true "Hit rate")
 
-This image plots the distribution of hit rate metrics achieved across all user recommendations and is useful in assessing the performance of the recommender statistically. When model parameters are updated or tuned to improve performance, this plot will be useful in determining successful changes. Hit rate is defined to be the fraction of top 10 recommended forms that match the business unit (as defined by the mapping) as any corresponding consumed forms. Thus, the higher the hit rate, the better the performance of the recommender in understanding user preference.
+This plot represents the distribution of hit rate metrics achieved across all user recommendations and is useful in assessing the performance of the recommender statistically. When model parameters are updated or tuned to improve performance, this plot will be useful in determining successful changes. Hit rate is defined to be the fraction of top 10 recommended forms that match the business unit (as defined by the mapping) as any corresponding consumed forms. Thus, the higher the hit rate, the better the performance of the recommender in understanding user preference.
 
 ![Alt text](img/3d.png?raw=true "Hit rate vs form submissions vs interactions")
 
