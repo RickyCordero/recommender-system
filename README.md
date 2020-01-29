@@ -31,7 +31,7 @@ load the notebook titled:
 asset_model.ipynb
 ```
 
-## Utiling Notebook
+## Utilizing Notebook
 
 Inside the notebook you will first load the necessary data:
 
@@ -45,7 +45,7 @@ This data corresponds to the mapping we use to map the company's internal busine
 
 ![Alt text](img/interactions.png?raw=true "User interaction data")
 
-This data corresponds to the quantitative metrics each user generates with respect to the forms they submit. An interaction is defined as a form submission occurrence for a unique form, whereas form_submissions indicates total submissions generated across all interactions.
+This data corresponds to the quantitative metrics each user generates with respect to the forms they submit. An interaction is defined as a form submission occurrence for a unique form, whereas ```form_submissions``` indicates total submissions generated across all interactions.
 
 ![Alt text](img/avg_similarity.png?raw=true "Average similarity data")
 
